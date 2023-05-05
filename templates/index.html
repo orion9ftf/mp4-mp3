@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Of MP4 to MP3</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="{{ url_for("static", filename="style.css") }}" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <main class="bg-dark ">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-sm-2 col-md-2 col-lg-2">
+        </div>
+
+        <div class="col-sm-8 col-md-8 col-lg-8">
+          <div class="banner">
+            <h1 class="title-form text-light">De MP4 A MP3</h1>
+      
+            <form action="POST">
+              <p class="text-url text-warning">URL:</p>
+              
+              <input class="form-control" type="text" required name="url">
+              <br><br>
+              
+              <button class="btn-input-mp4 btn btn-outline-warning" type="submit" formaction="/envia">Descargar MP4</button>
+              <button class="btn-input-mp3 btn btn-outline-danger" type="submit" formaction="/envia2">Descargar MP3</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="col-sm-2 col-md-2 col-lg-2">
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <!-- LEVANTAR SERVIDOR: python3 -m http.server 8888 -->
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
